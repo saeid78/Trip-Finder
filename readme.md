@@ -33,8 +33,8 @@ A step by step series of examples that tell you have to get a development env ru
 1-Install the composer from the root of the project.
 2-Duplicate .env.exapmle to .env and register the DB info.
 3-Run: php artisan migrate to create the tables.
-4-Run: php artisan passport:install.
-4-Run: php artisan db:seed.
+4-Run: php artisan db:seed. 
+5-Run: php artisan passport:install.
 
 ```
 
