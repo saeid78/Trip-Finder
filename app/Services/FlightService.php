@@ -4,6 +4,7 @@ namespace App\Services;
 
 use App\Flight;
 use App\Airport;
+use phpseclib\Crypt\DES;
 use  Validator;
 
 
@@ -26,8 +27,8 @@ Class FlightService {
     //to get all the flights
 
     public function getFlights() {
-        return $this->filterFlights(Flight::all());
-
+//        return $this->filterFlights(Flight::all());
+        return $this->filterFlights(Flight::orderBy('created_at', 'desc')->get());
     }
 
     //to get an indiviual flight
